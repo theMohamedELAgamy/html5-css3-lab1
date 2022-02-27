@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="html5,javascript,java,turotials" >
+
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+        
+            if(localStorage.visitTimes){
+                localStorage.visitTimes = Number(localStorage.visitTimes)+1
+            }else{
+                localStorage.visitTimes = "1";
+            }
+    
+            document.writeln(localStorage.visitTimes)
+        </script>
+        <center>
+        <label>Title:</label>   <input type="text" placeholder="title"  required /></br></br>
+       <label>Email:</label> <input type="email" placeholder="Email"  required /></br></br>
+       <label>URL:</label> <input type="url" autofocus /></br></br>
+       <label>Date:</label><input type="date"  /></br></br>
+        <input type="submit" value="go" /></br></br>
+        <output placeholder="OUTput"></output></br></br>
+            
+            <video class="video" controls loop id="myvideo">
+                <source src="https://www.w3schools.com/tags/movie.mp4" type="video/mp4">
+                <source src="https://www.w3schools.com/tags/movie.ogg" type="video/ogg">
+                you browser not support video tag
+            </video>
+        </center>
+    </body>
+</html>
